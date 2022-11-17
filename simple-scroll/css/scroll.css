@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(228, 247, 197);
+}
+h1{
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 3rem;
+    text-align: center;
+
+}
+header{
+    height: 600px;
+    line-height: 600px;
+    border: green 1px solid;
+}
+#container{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.scroll-element{
+    height: 600px;
+    line-height: 600px;
+
+}
+#content1{
+    background-color: rgb(58, 114, 114);
+    background-image: url("../images/story\ of\ cece.jpg");
+}
+#content2{
+    background-color: palegreen;
+}
+#content3{
+    background-color: rgb(29, 209, 209);
+}
+#content4{
+    background-color: cornflowerblue;
+}
+#content5{
+    background-color: rgb(22, 48, 39);
+}
+#content6{
+    background-color: greenyellow;
+}
+.js-scroll{
+    opacity: 0;
+}
+.scrolled.fade-in{
+    animation: fade-in 1s ease-in-out both;
+}
+.scrolled.slide-left{
+    animation:slide-in-left 1s ease-in-out both;
+}
+.scrolled.slide-right{
+    animation: slide-in-right 1s ease-in-out both;
+}
+.scrolled.slide-bottom{
+    animation: slide-in-bottom 1s ease-in-out both;
+}
+.scrolled.slide-bottom-zig-zag{
+    animation: slide-in-bottom-zig-zag 2s ease-in both;
+}
+.scrolled.rotate{
+    animation: rotate 1s ease-in both;
+}
+/* keyframe aimations */
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slide-in-right{
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-left{
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bottom-zig-zag{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    33%{
+        transform: translateY(-50px);
+    }
+    66%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
